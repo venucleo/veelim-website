@@ -400,6 +400,11 @@ a:hover { color: var(--muted); }
 /* Legal page */
 .legal { max-width: 800px; margin: 0 auto; padding: clamp(2.5rem, 6vw, 4.5rem) var(--gutter) 5rem; font-size: 16px; overflow-wrap: break-word; }
 .legal h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 300; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 2rem; }
+.legal h2 { font-size: 13px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin: 3rem 0 1rem; }
+.legal .provider { padding: 1.5rem 1.75rem; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.legal .provider h2 { margin-top: 0; }
+.legal .provider p { margin: 0 0 .75rem; }
+.legal .provider p:last-child { margin-bottom: 0; }
 .legal p > strong:first-child { display: block; margin-top: 2rem; font-size: 1.05em; }
 .legal ul { padding-left: 1.25rem; }
 .legal a { overflow-wrap: anywhere; }

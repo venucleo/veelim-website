@@ -25,6 +25,18 @@ const heroVideo = document.querySelector('.hero video');
 if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   heroVideo.removeAttribute('autoplay');
   heroVideo.pause();
+} else if (heroVideo) {
+  // The clip holds a still frame for its first 4 seconds, which looks like a
+  // freeze on every loop, so each run starts where the motion begins
+  const motionStart = 4.03;
+  heroVideo.loop = false;
+  const restart = () => {
+    heroVideo.currentTime = motionStart;
+    heroVideo.play().catch(() => {});
+  };
+  heroVideo.addEventListener('ended', restart);
+  if (heroVideo.readyState >= 1) heroVideo.currentTime = motionStart;
+  else heroVideo.addEventListener('loadedmetadata', () => { heroVideo.currentTime = motionStart; }, { once: true });
 }
 
 // Header background and back-to-top button depend on scroll position

@@ -16,14 +16,15 @@
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
-<body>
+<body class="home">
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
   <header class="site-header">
     <a class="brand" href="#top">Veelim &amp; The Big Vibe</a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menü öffnen">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <span class="burger" aria-hidden="true"></span>
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Hauptmenü">
       <ul>
@@ -46,21 +47,22 @@
         <h1 class="hero-logo"><img src="assets/img/logo.webp" width="500" height="500" alt="Veelim &amp; The Big Vibe"></h1>
         <p class="credit">photographs by Gregor Eisele, <a href="http://www.kaloo.de" rel="noopener">KALOO Images</a></p>
       </div>
+      <a class="scroll-cue" href="#band" aria-label="Weiter zur Band"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 9l7 7 7-7"/></svg></a>
     </section>
 
-    <p class="intro"><strong>Veelim &amp; THE BIG VIBE</strong> – schwingen in ihrer eigenen Frequenz und nehmen den Zuhörer mit in ein musikalisches Multiversum, das vertraut und unbekannt zugleich ist. Veelims introspektive Songs in englischer, manchmal auch deutscher Sprache erhalten durch Siggis punktgenaue Drum-Grooves und Hans’ tragende Basslinien und mehrstimmige Gesangsmelodien eine neue Dimension und ihre endgültige Form.</p>
+    <p class="intro reveal"><strong>Veelim &amp; THE BIG VIBE</strong> – schwingen in ihrer eigenen Frequenz und nehmen den Zuhörer mit in ein musikalisches Multiversum, das vertraut und unbekannt zugleich ist. Veelims introspektive Songs in englischer, manchmal auch deutscher Sprache erhalten durch Siggis punktgenaue Drum-Grooves und Hans’ tragende Basslinien und mehrstimmige Gesangsmelodien eine neue Dimension und ihre endgültige Form.</p>
 
     <section class="band" id="band" aria-label="Die Band">
-      <div class="member">
-        <div class="member-photo rounded"><img src="assets/img/band/siggi.webp" width="1400" height="1103" loading="lazy" alt="Siggi"></div>
+      <div class="member reveal">
+        <div class="member-photo"><img src="assets/img/band/siggi.webp" width="1400" height="1103" loading="lazy" alt="Siggi"></div>
         <div class="member-name"><h3>Siggi</h3><p>an den Drums</p></div>
       </div>
-      <div class="member reverse">
+      <div class="member reverse reveal">
         <div class="member-photo"><img src="assets/img/band/hans.webp" width="1400" height="1103" loading="lazy" alt="Hans"></div>
         <div class="member-name"><h3>Hans</h3><p>am Bass</p></div>
       </div>
-      <div class="member">
-        <div class="member-photo rounded"><img src="assets/img/band/veelim.webp" width="1400" height="1103" loading="lazy" alt="Veelim"></div>
+      <div class="member reveal">
+        <div class="member-photo"><img src="assets/img/band/veelim.webp" width="1400" height="1103" loading="lazy" alt="Veelim"></div>
         <div class="member-name"><h3>Veelim</h3><p>an Mic und Gitarre</p></div>
       </div>
     </section>
@@ -72,7 +74,7 @@
           <div>
             <p>Hier ist ein Player von Spotify eingebunden. Beim Laden werden Daten an Spotify übertragen.</p>
             <button class="button" type="button">Spotify-Player laden</button>
-            <p style="margin-top:1rem"><a href="https://open.spotify.com/artist/6isFGkUkQdah1aDHIGBFXO" rel="noopener">Direkt auf Spotify öffnen</a></p>
+            <p class="spotify-link"><a href="https://open.spotify.com/artist/6isFGkUkQdah1aDHIGBFXO" rel="noopener">Direkt auf Spotify öffnen</a></p>
           </div>
         </div>
         <p class="music-credits">recorded and mixed by <a href="http://www.ulifiedler.de" rel="noopener">Uli Fiedler</a> at <a href="http://www.fliptopmusic.de" rel="noopener">FLIPTOP MUSIC Studio</a></p>

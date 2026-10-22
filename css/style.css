@@ -405,6 +405,7 @@ a:hover { color: var(--muted); }
 .legal .provider h2 { margin-top: 0; }
 .legal .provider p { margin: 0 0 .75rem; }
 .legal .provider p:last-child { margin-bottom: 0; }
+.legal .provider .credit-line { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 .legal p > strong:first-child { display: block; margin-top: 2rem; font-size: 1.05em; }
 .legal ul { padding-left: 1.25rem; }
 .legal a { overflow-wrap: anywhere; }

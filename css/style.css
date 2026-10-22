@@ -47,6 +47,8 @@ body {
 body.menu-open, html:has(dialog[open]) { overflow: hidden; }
 
 img, video { display: block; max-width: 100%; height: auto; }
+/* No long-press "save image" menu on phones, no dragging the photos out */
+img, video, .gallery a { -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; -webkit-user-drag: none; }
 a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px; transition: color .2s; }
 a:hover { color: var(--muted); }
 :focus-visible { outline: 2px solid var(--fg); outline-offset: 4px; border-radius: 2px; }

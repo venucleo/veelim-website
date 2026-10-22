@@ -20,6 +20,11 @@ if (toggle && nav) {
   window.matchMedia('(min-width: 761px)').addEventListener('change', (e) => { if (e.matches) setOpen(false); });
 }
 
+// Photos and the video can't be saved by right-click or dragged out
+const isMedia = (target) => target instanceof Element && target.closest('img, video, .gallery a');
+document.addEventListener('contextmenu', (e) => { if (isMedia(e.target)) e.preventDefault(); });
+document.addEventListener('dragstart', (e) => { if (isMedia(e.target)) e.preventDefault(); });
+
 // The hero video stands still for people who prefer less motion
 const heroVideo = document.querySelector('.hero video');
 if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
